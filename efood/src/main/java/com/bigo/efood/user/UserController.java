@@ -12,6 +12,7 @@ public class UserController {
         this.userService = userService;
     }
 
+    @RequestMapping("/register")
     public void Register(UserDTO userDTO) {
         userService.save(userDTO);
     }
